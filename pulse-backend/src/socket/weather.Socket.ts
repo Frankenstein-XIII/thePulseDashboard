@@ -5,7 +5,7 @@ import { fetchNanjingWeather } from "../services/weather.Services";
 export const steupWeatherSocket = (io: Server) =>{
     console.log("Socket Logic is Initialized.")
     io.on('connection', async(socket) =>{
-        console.log("Client connected to Pulse: ");
+        console.log("Client connected to Pulse:...");
 
         try{
             const data = await fetchNanjingWeather();

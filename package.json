@@ -1,0 +1,12 @@
+{
+  "name": "the-pulse",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:server": "cd pulse-backend && npx ts-node src/index.ts",
+    "dev:client": "cd pulse-frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
